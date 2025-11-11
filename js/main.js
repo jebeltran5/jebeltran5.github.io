@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           url: 'documentos/Hoja_de_vida_Jelver_Beltran.docx_2025_1.pdf'
         },
         {
-          url: 'documentos/Hoja_de_vida_Jelver_Beltran.docx_2025_2.docx'
+         // url: 'documentos/Hoja_de_vida_Jelver_Beltran.docx_2025_2.docx'
         }
       ];
 

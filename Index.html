@@ -6,39 +6,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilo.css" />
-    <title>Document</title>
+    <meta name="author" content="Jelver Beltran" />
+    <title>Portafolio - Desarrollador Web</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/logo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1350px 1000px;
+            color: black;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .caja-perfil {
+            background-color: aliceblue;
+            color: #141111;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .caja-perfil p {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.6;
+            border-radius: 10px;
+        }
+
+        /* Nuevos estilos para el footer mejorado */
+        .custom-footer {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            margin-top: auto;
+        }
+
+        .footer-section h5 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #3498db;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #3498db;
+            transform: translateY(-3px);
+        }
+
+        .contact-info i {
+            color: #3498db;
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .footer-bottom {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .newsletter-form .form-control {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .newsletter-form .form-control::placeholder {
+            color: #bdc3c7;
+        }
+
+        .newsletter-form .btn {
+            background-color: #3498db;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="contenido">
-        <div class="container-fluid" id="menu-principal">
-            <nav id="menu-container">
-                <!-- El menú se cargará aquí desde menu.html -->
-            </nav>
-        </div>
         <main>
-            <div class="container text-center mt-4">
-                <h1>Desarrollador Web</h1>
-                <img src="images/descarga.jfif" alt="Foto de perfil" class="profile-pic">
-                <p class="espacio">
-                    Soy un desarrollador web con experiencia en la creación de sitios web atractivos y funcionales. Me
-                    especializo en HTML, CSS y JavaScript, y tengo un fuerte enfoque en la experiencia del usuario y el
-                    diseño responsivo. Estoy comprometido con la entrega de soluciones de alta calidad que satisfagan
-                    las
-                    necesidades de mis clientes.
-                </p>
+            <section class="container text-center mt-4">
+                <header class="caja-perfil">
+                    <h1>Desarrollador web</h1>
+                </header>
+                <figure>
+                    <img src="images/descarga.jfif" alt="foto de perfil" class="profile-pic">
+                </figure>
+                <article class="caja-perfil">
+                    <p> Soy un desarrollador web con experiencia en la creación de sitios web atractivos y funcionales.
+                        Me especializo en HTML, CSS y JavaScript, y tengo un fuerte enfoque en la experiencia del
+                        usuario
+                        y el diseño responsivo. Estoy comprometido con la entrega de soluciones de alta calidad que
+                        satisfagan las necesidades de mis clientes</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Mejorado -->
+    <footer class="custom-footer">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Columna 1: Información personal -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Jelver Beltrán</h5>
+                    <p class="text-light">Desarrollador Web Full Stack especializado en crear experiencias digitales excepcionales con tecnologías modernas.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.linkedin.com/in/jelver-beltran" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/jebeltran5" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="Index.html"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
+                        <li><a href="PaginaPrincipal.html"><i class="fas fa-chevron-right me-2"></i>Sobre Mí</a></li>
+                        <li><a href="queRealizo.html"><i class="fas fa-chevron-right me-2"></i>Servicios</a></li>
+                        <li><a href="portafolio.html"><i class="fas fa-chevron-right me-2"></i>Portafolio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Información de contacto -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <div class="contact-info">
+                        <p class="mb-2">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jelverfon@outlook.es" class="text-light">jelverfon@outlook.es</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+573028480651" class="text-light">+57 302 848 0651</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="text-light">Bogotá, Colombia</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Newsletter -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-light">Suscríbete para recibir actualizaciones sobre nuevos proyectos y tecnologías.</p>
+                    <form class="newsletter-form">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Suscribirse
+                        </button>
+                    </form>
+                </div>
             </div>
-    </div>
-    <div id="footer-container">
-        <!--El footer se cargara aqui-->
-    </div>
+        </div>
+
+        <!-- Línea inferior -->
+        <div class="footer-bottom">
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 Jelver Beltrán. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="#privacidad" class="text-light me-3">Política de Privacidad</a>
+                        <a href="#terminos" class="text-light">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
 
 </html>
